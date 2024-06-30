@@ -205,11 +205,16 @@ body{
 }
 
 
+.interest{
+  text-align: center;
+}
+
+
 .interest-title{
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
+  text-align: inherit;
   color: #000000;
 }
 
@@ -217,7 +222,7 @@ body{
 .interest-subtitle{
   font-size: 22px;
   line-height: 26px;
-  text-align: center;
+  text-align: inherit;
   color: #333333;
 }
 
@@ -226,7 +231,7 @@ body{
   font-size: 20px;
   line-height: 36px;
   text-transform: uppercase;
-  text-align: center;
+  text-align: inherit;
   color: #ffffff;
 }
 
@@ -522,12 +527,32 @@ body{
 }
 
 
+.pagination-link-black{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+}
+
+
 .pagination-blue{
   border-radius: 4px;
   width: 60px;
   height: 60px;
   background: #82b3d3;
 
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.pagination-link-white{
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
