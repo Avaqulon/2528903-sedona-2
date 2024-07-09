@@ -16,6 +16,11 @@
 }
 
 
+html{
+  height: 100%;
+}
+
+
 body{
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
@@ -23,6 +28,17 @@ body{
   color: #000000;
   background-color: #ffffff;
   box-shadow:  0 0 15px 0 rgba(0, 0, 0, 0.2);
+
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+
+.container{
+  margin: 0 auto;
+  width: 1200px;
 }
 
 
@@ -82,6 +98,10 @@ body{
   background-repeat: no-repeat;
 }
 
+
+.main-container{
+  flex-grow: 1;
+}
 
 
 .hero{
@@ -349,7 +369,7 @@ body{
 .select-find{
   font-weight: 700;
   font-size: 30px;
-  line-height: 120%;
+  line-height: 36px;
   text-transform: uppercase;
   color: #000000;
 }
@@ -435,7 +455,7 @@ body{
 .product-card-price{
   font-weight: 400;
   font-size: 18px;
-  line-height: 117%;
+  line-height: 21px;
   text-align: right;
   color: #333333
 }
