@@ -69,6 +69,31 @@ body{
 }
 
 
+.logotype{
+  margin-left: 70px;
+}
+
+
+.navigation{
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+.navigation-list{
+  width: 507px;
+  margin: 0;
+  padding: 0;
+}
+
+
+.navigation-user{
+  max-width: 268px;
+  margin-left: auto;
+}
+
+
 .navigation-link-words{
   color: #000000;
   background-color: #ffffff;
@@ -104,12 +129,24 @@ body{
 }
 
 
+.page-container{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
 .hero{
   color: #000000;
   background-color: #ffffff;
   background-image: url("../images/main-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+}
+
+
+.hero-welcome{
+  display: block;
+  margin: 0 auto;
 }
 
 
@@ -120,6 +157,10 @@ body{
   line-height: 36px;
   text-align: center;
   text-transform: uppercase;
+
+  display: block;
+  margin: 0 auto;
+  margin-top: 69px;
 }
 
 
@@ -129,6 +170,24 @@ body{
   font-size: 22px;
   line-height: 26px;
   text-align: center;
+
+  display: block;
+  margin: 0 auto;
+  margin-top: 25px;
+  margin-bottom: 90px;
+}
+
+
+.advantages-list{
+  margin: 0;
+  padding: 0;
+}
+
+
+.advantages-item{
+  display: flex;
+  width: 400px;
+  height: 385px;
 }
 
 
@@ -230,12 +289,21 @@ body{
 }
 
 
+.interest-container{
+  display: block;
+  margin: 0 auto;
+  width: 1200px;
+}
+
+
 .interest-title{
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   text-align: inherit;
   color: #000000;
+
+  margin-bottom: 20px;
 }
 
 
@@ -244,6 +312,8 @@ body{
   line-height: 26px;
   text-align: inherit;
   color: #333333;
+
+  margin-bottom: 54px;
 }
 
 
@@ -256,12 +326,23 @@ body{
 }
 
 
+.news-container{
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
 .news-background{
   color: #000000;
   background-color: #ffffff;
   background-image: url("../images/main-news-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+
+  width: 1200px;
+  height: 415px;
 }
 
 
@@ -579,4 +660,27 @@ body{
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+}
+
+
+.page-footer-container{
+  width: 1200px;
+  display: flex;
+  margin: 0 auto;
+}
+
+
+.info-item{
+  width: 170px;
+}
+
+
+.info-contacts{
+  width: 340px;
+  margin: 0 auto;
+}
+
+
+.info-academy{
+  width: 115px;
 }
