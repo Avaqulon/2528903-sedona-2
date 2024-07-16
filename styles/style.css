@@ -71,6 +71,9 @@ body{
 
 .logotype{
   margin-left: 70px;
+  padding-right: 28px;
+  width: 138px;
+  height: 64px;
 }
 
 
@@ -507,12 +510,26 @@ body{
 }
 
 
-.main-inner{
+/* Начинается Hotels */
+
+
+.hotels-settings{
   background-image: url("../images/hotels-main-background.jpg");
   color: #000000;
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-size: 100% auto;
+
+  width: 1200px;
+  height: 412px;
+  margin: 0 auto 70px;
+}
+
+
+.hotels-settings-menu{
+  display: block;
+  margin: 0 auto;
+  width: 1060px;
 }
 
 
@@ -521,12 +538,20 @@ body{
   font-size: 60px;
   line-height: 78px;
   color: #ffffff;
+
+  margin: 0 0;
+  padding-top: 35px;
 }
 
 
 .breadcrumbs{
   color: #ffffff;
   text-decoration: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 8px 0 40px;
 }
 
 
@@ -535,6 +560,24 @@ body{
   line-height: 21px;
   color: #ffffff;
   text-decoration: none;
+}
+
+
+.hotels-fieldset{
+  display: flex;
+  flex-direction: row;
+}
+
+
+.hotels-filter-group{
+  border: none;
+  padding: 0 0;
+  margin: 0 0;
+}
+
+
+.hotels-filter-group-two{
+  margin-left: 70px;
 }
 
 
@@ -551,6 +594,20 @@ body{
   font-size: 18px;
   line-height: 23px;
   color: #ffffff;
+
+  margin-top: 32px;
+}
+
+
+.hotels-item{
+  padding: 8px 0;
+}
+
+
+.hotels-button{
+  display: flex;
+  flex-direction: column;
+  width: 191px;
 }
 
 
