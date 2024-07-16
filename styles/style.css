@@ -147,6 +147,7 @@ body{
 .hero-welcome{
   display: block;
   margin: 0 auto;
+  height: 485px;
 }
 
 
@@ -463,6 +464,7 @@ body{
   width: 232px;
   height: 52px;
   background: #82b3d3;
+  color: #ffffff;
 }
 
 
