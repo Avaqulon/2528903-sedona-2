@@ -636,6 +636,11 @@ body{
 }
 
 
+.select{
+  margin-bottom: 40px;
+}
+
+
 .select-containter{
   display: flex;
   flex-direction: row;
@@ -653,6 +658,8 @@ body{
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
+
+  align-self: center;
 }
 
 
@@ -681,15 +688,12 @@ body{
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-
-
 }
 
 
 .button-cards{
   border: 2px solid #000000;
   border-radius: 4px;
-  padding: 14px 12px;
   width: 48px;
   height: 48px;
 }
@@ -698,7 +702,7 @@ body{
 .button-single{
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  padding: 14px 12px;
+  margin: 0 8px;
   width: 48px;
   height: 48px;
 }
@@ -707,7 +711,6 @@ body{
 .button-list{
   border: 2px solid #e5e5e5;
   border-radius: 4px;
-  padding: 14px 12px;
   width: 48px;
   height: 48px;
 }
