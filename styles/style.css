@@ -69,11 +69,18 @@ body{
 }
 
 
+.logo{
+  margin-top: -10px;
+}
+
+
 .logotype{
   margin-left: 70px;
   padding-right: 28px;
   width: 138px;
   height: 64px;
+  position: relative;
+  top: 10px;
 }
 
 
@@ -124,6 +131,7 @@ body{
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
+  background-position: center center;
 
   display: block;
   padding: 0 12px;
@@ -137,9 +145,16 @@ body{
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
+  background-position: center center;
 
   display: block;
   padding: 0 12px;
+}
+
+
+.navigation-link{
+  text-decoration: none;
+  color: #000000;
 }
 
 
@@ -424,7 +439,6 @@ body{
   background-size: 100% auto;
 
   width: 1200px;
-  height: 100%; /* Так можно? */
 }
 
 
@@ -541,17 +555,11 @@ body{
   background-repeat: no-repeat;
   background-size: 100% auto;
 
-
-  width: 1200px;
+  display: block;
+  width: 1060px;
   height: 412px;
   margin: 0 auto 70px;
-}
-
-
-.hotels-settings-menu{
-  display: block;
-  margin: 0 auto;
-  width: 1060px;
+  padding: 0 70px;
 }
 
 
@@ -643,7 +651,7 @@ body{
 
 
 .select{
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 
@@ -655,6 +663,7 @@ body{
 
   width: 1060px;
   margin: 0 auto;
+  padding-bottom: 40px;
 }
 
 
@@ -719,6 +728,11 @@ body{
   border-radius: 4px;
   width: 48px;
   height: 48px;
+}
+
+
+.product-list{
+  padding: 0 70px;
 }
 
 
@@ -840,7 +854,7 @@ body{
   max-width: 400px;
 
   margin-top: 80px;
-  padding: 0;
+  padding: 0 70px;
 }
 
 
