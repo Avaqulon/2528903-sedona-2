@@ -93,7 +93,7 @@ body{
 
 .navigation-list{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   align-items: center;
 
 
@@ -255,13 +255,12 @@ body{
   display: flex;
   flex-direction: column;
 
-  padding: 112px 85px 62px;
   margin: 0;
 }
 
-/* .advantages-reason.advantages-reason-pale ПО РАЗНОМУ РАСТЯГИВАЕТСЯ */
+
 .advantages-reason.advantages-reason-pale{
-  padding: 112px 99px 62px;
+  padding: 112px 109px 62px;
   margin: 0;
 }
 
@@ -272,6 +271,9 @@ body{
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
+
+  padding: 112px 114px 62px;
+  margin: 0;
 }
 
 
@@ -280,6 +282,9 @@ body{
   line-height: 21px;
   text-align: center;
   color: #ffffff;
+
+  margin: 0;
+  padding: 0 86px;
 }
 
 
@@ -299,6 +304,7 @@ body{
   color: #333333;
 
   padding: 0 85px;
+  margin: 0;
 }
 
 
@@ -338,21 +344,17 @@ body{
 .comfort-list{
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
-  margin: 0 auto;
-  width: 100%;
-  height: 385px;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 }
 
 
 .comfort-item{
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
-  padding: 81px 0;
   width: 400px;
-
-  padding-top: 138px;
+  height: 385px;
 }
 
 
@@ -372,6 +374,9 @@ body{
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+
+  padding: 112px 109px 62px;
+  margin: 0;
 }
 
 
@@ -380,6 +385,9 @@ body{
   line-height: 21px;
   text-align: center;
   color: #333333;
+
+  padding: 0 85px;
+  margin: 0;
 }
 
 
@@ -518,12 +526,31 @@ body{
   display: flex;
   flex-direction: row;
   margin: 40px auto 30px;
-  padding: 0 0;
+  padding: 0;
+}
+
+
+.info-list{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+
+.info-list{
+  width: 150px;
 }
 
 
 .info-item{
-  width: 150px;
+  width: 47px;
+  height: 40px;
+}
+
+/* Как правильно отцентрировать иконки? */
+.info-link{
+  display: block;
+  padding: 11px 12px;
+
 }
 
 
@@ -849,7 +876,7 @@ body{
 
 .pagination{
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-between;
   max-width: 400px;
 
