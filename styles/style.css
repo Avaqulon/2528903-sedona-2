@@ -486,6 +486,8 @@ body{
 
 
 .news-search{
+  display: flex;
+  margin: 0 auto;
   text-align: center;
 
   padding-bottom: 104px;
@@ -506,6 +508,8 @@ body{
   width: 452px;
   height: 52px;
   background: #f2f2f2;
+  box-sizing: border-box;
+  border: none;
 }
 
 
@@ -515,6 +519,8 @@ body{
   height: 52px;
   background: #82b3d3;
   color: #ffffff;
+  box-sizing: border-box;
+  border: none;
 }
 
 
