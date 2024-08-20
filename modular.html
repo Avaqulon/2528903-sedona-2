@@ -5,8 +5,8 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Modular</title>
   </head>
-  <body>
-
+  <body class="modular-page">
+    <section class="modular-container">
       <header class="header">
         <h1 class="header-title">Поиск гостиницы в Седоне</h1>
         <a class="header-link" href="index.html">
@@ -18,25 +18,26 @@
 
         <form class="settings-form" action="https://echo.htmlacademy.ru/" method="post">
           <div>
-            <label for="settings-date-in">Дата заезда:</label>
-            <input type="text" name="settings-date-in" id="settings-date-in" placeholder="00.00.0000"> <!-- задать 00.месяц.0000 -->
+            <label class="settings-attribute" for="settings-date-in">Дата заезда:</label>
+            <input class="settings-date-border" type="date" name="settings-date-in" id="settings-date-in" placeholder="00.00.0000"> <!-- задать 00.месяц.0000 -->
           </div>
           <div>
-            <label for="settings-date-out">Дата выезда:</label>
-            <input type="text" name="settings-date-out" id="settings-date-out" placeholder="00.00.0000"> <!-- задать 00.месяц.0000 -->
+            <label class="settings-attribute" for="settings-date-out">Дата выезда:</label>
+            <input class="settings-date-border" type="date" name="settings-date-out" id="settings-date-out" placeholder="00.00.0000"> <!-- задать 00.месяц.0000 -->
           </div>
           <div>
-            <label for="settings-date-adult">Взросые:</label>
-            <input type="number" name="settings-date-adult" id="settings-date-adult">
+            <label class="settings-attribute" for="settings-date-adult">Взросые:</label>
+            <input class="settings-age-border" type="number" name="settings-date-adult" id="settings-date-adult">
+
+            <label class="settings-attribute" for="settings-date-child">Дети:</label>
+            <button class="visually-hidden"> информация </button> <!-- Убрать (наверное) -->
+            <input class="settings-age-border" type="number" name="settings-date-adult" id="settings-date-child">
           </div>
-          <div>
-            <label for="settings-date-child">Дети:</label>
-            <button class="visually-hidden">информация</button> <!-- Убрать (наверное) -->
-            <input type="number" name="settings-date-adult" id="settings-date-child">
-          </div>
-          <button class="button" type="submit">Найти</button>
         </form>
+        <button class="button settings-find-border" type="submit">Найти</button>
 
       </main>
-
+    </section>
   </body>
+
+</html>
