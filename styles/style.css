@@ -42,6 +42,13 @@ body{
 }
 
 
+*,
+*::before
+*::after{
+  box-sizing: border-box;
+}
+
+
 .visually-hidden{
   position: absolute;
   width: 1px;
@@ -70,13 +77,11 @@ body{
 
 
 .logo{
-  margin-top: -6px;
-  margin-right: 28px;
+  margin: -6px 28px 0 70px;
 }
 
 
 .logotype{
-  margin-left: 70px;
   width: 138px;
   height: 64px;
   position: relative;
@@ -104,7 +109,7 @@ body{
 
 
 .navigation-item{
-  margin: 15px 0;
+  margin: 15px 2px;
 }
 
 
@@ -156,7 +161,7 @@ body{
   text-decoration: none;
   color: #000000;
 
-  padding: 15px 10px;
+  padding: 15px 8px;
 }
 
 
@@ -304,8 +309,8 @@ body{
   text-align: center;
   color: #333333;
 
-  padding: 0 85px;
   margin: 0;
+  padding: 0 85px;
 }
 
 
@@ -538,19 +543,17 @@ body{
   width: 1200px;
   display: flex;
   flex-direction: row;
-  margin: 40px auto 30px;
-  padding: 0;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 
 .info-list{
   display: flex;
   flex-flow: row wrap;
-}
 
-
-.info-list{
   width: 150px;
+  padding-left: 58px;
 }
 
 
@@ -594,7 +597,8 @@ body{
 
 
 .info-academy{
-  width: 150px;
+  max-width: 150px;
+  padding-right: 70px;
 }
 
 
@@ -606,8 +610,7 @@ body{
   color: #000000;
   background-color: #ffffff;
   background-repeat: no-repeat;
-  background-size: 100% auto;
-  object-fit: cover;
+  background-size: cover;
 
   display: block;
   width: 1060px;
@@ -825,7 +828,7 @@ body{
 
 .product-list{
   display: grid;
-  grid-template-columns: 340px 340px 340px;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   padding: 0 70px;
   margin: 0;
@@ -836,17 +839,19 @@ body{
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   padding: 20px;
-  width: 340px;
-  height: 438px;
+/*   width: 340px;
+  height: 438px; */
   box-sizing: border-box;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 16px;
 }
 
 
-.product-info{
-  display: grid;
-  grid-template-columns: 140px 140px;
-  column-gap: 20px;
-  row-gap: 16px;
+.product-card-link{
+  grid-column: 1/-1;
 }
 
 

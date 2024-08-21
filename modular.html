@@ -8,10 +8,8 @@
   <body class="modular-page">
     <section class="modular-container">
       <header class="header">
-        <h1 class="header-title">Поиск гостиницы в Седоне</h1>
-        <a class="header-link" href="index.html">
-          <img class="header-back" src="images/modular-exit.svg" alt="закрыть" width="52" height="52">
-        </a>
+        <h3 class="header-title">Поиск гостиницы в Седоне</h3>
+        <button class="header-link" type="button">Закрыть</button>
       </header>
 
       <main class="settings">
@@ -19,22 +17,26 @@
         <form class="settings-form" action="https://echo.htmlacademy.ru/" method="post">
           <div>
             <label class="settings-attribute" for="settings-date-in">Дата заезда:</label>
-            <input class="settings-date-border" type="date" name="settings-date-in" id="settings-date-in" placeholder="00.00.0000"> <!-- задать 00.месяц.0000 -->
+            <input class="settings-date-border" type="text" name="settings-date-in" id="settings-date-in" placeholder="27 апреля 2020">
+            <span>Мы не можем отправить вас в прошлое.</span>
           </div>
           <div>
             <label class="settings-attribute" for="settings-date-out">Дата выезда:</label>
-            <input class="settings-date-border" type="date" name="settings-date-out" id="settings-date-out" placeholder="00.00.0000"> <!-- задать 00.месяц.0000 -->
+            <input class="settings-date-border" type="text" name="settings-date-out" id="settings-date-out" placeholder="1 сентября 2023">
+            <span>На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div>
             <label class="settings-attribute" for="settings-date-adult">Взросые:</label>
             <input class="settings-age-border" type="number" name="settings-date-adult" id="settings-date-adult">
-
+          </div>
+          <div>
             <label class="settings-attribute" for="settings-date-child">Дети:</label>
             <button class="visually-hidden"> информация </button> <!-- Убрать (наверное) -->
             <input class="settings-age-border" type="number" name="settings-date-adult" id="settings-date-child">
           </div>
+          <button class="button settings-find-border" type="submit">Найти</button>
         </form>
-        <button class="button settings-find-border" type="submit">Найти</button>
+
 
       </main>
     </section>
