@@ -130,42 +130,25 @@ body{
 }
 
 
-.navigation-link::after{
-  content: "";
-  position: absolute;
-  top: 104%;
-  left: 0;
-  right: 0;
-  bottom: -4px;
-  height: 2px;
-  background-color: #756157;
-  opacity: 0;
-}
-
-
-.navigation-link:hover::after{
-  opacity: 1;
-}
-
-
-.navigation-link-current::before{
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: -4px;
-  height: 2px;
-  /* width: 93px; */
-  background-color: #756157
-}
-
-/*
-.navigation-link:hover{
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  border-bottom: 2px solid #756257;
+/* .navigation-item-current{
+  position: relative;
 } */
+
+
+.navigation-link-current::after{
+  content: "";
+  position: absolute;
+  background-color: red;
+  top: 103%;
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+
+
+.navigation-link-words:hover{
+
+}
 
 
 .navigation-link-brown{
@@ -702,8 +685,15 @@ body{
 }
 
 
-.info-icon:focus{
-  background-color: #68A2CA;
+.info-link:hover path,
+.info-link:focus path{
+ fill: #313335;
+ transition: 1s;
+}
+
+
+.info-link:active{
+  opacity: 0.3;
 }
 
 
@@ -735,10 +725,37 @@ body{
 }
 
 
+.info-contacts:hover,
+.info-contacts:focus{
+  color: #756157;
+  transition: 1s;
+}
+
+
+.info-contacts:active{
+  color: #756157;
+  opacity: 0.3;
+}
+
+
 .info-academy{
   max-width: 150px;
   padding-right: 70px;
 }
+
+
+.info-academy:hover path,
+.info-academy:focus path{
+  fill: #756157;
+  transition: 1s;
+}
+
+
+.info-academy:active{
+  fill: #756157;
+  opacity: 0.3;
+}
+
 
 
 /* Начинается Hotels */
@@ -955,6 +972,21 @@ body{
 }
 
 
+.button-cards:hover{
+  border: 2px solid #000000;
+}
+
+
+.button-cards:focus{
+  border: 2px solid #68A2CA;
+}
+
+
+.button-cards:active{
+  border: 2px solid #000000;
+}
+
+
 .button-single{
   position: relative;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -966,6 +998,21 @@ body{
 }
 
 
+.button-single:hover{
+  border: 2px solid #000000;
+}
+
+
+.button-single:focus{
+  border: 2px solid #68A2CA;
+}
+
+
+.button-single:active{
+  border: 2px solid #000000;
+}
+
+
 .button-list{
   position: relative;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -973,6 +1020,27 @@ body{
   border-radius: 4px;
   width: 48px;
   height: 48px;
+}
+
+
+.button-list:hover{
+  border:  2px solid;
+  /* outline: 2px solid #000000; */
+  border-color: #000000;
+}
+
+
+.button-list:focus{
+  border:  2px solid;
+  /* outline: 2px solid #68A2CA; */
+  border-color: #68A2CA;
+}
+
+
+.button-list:active{
+  border:  2px solid;
+  /* outline: 2px solid #000000; */
+  border-color: #000000;
 }
 
 
@@ -1212,6 +1280,18 @@ body{
   color: #ffffff;
 }
 
+
+.pagination-link-white:hover,
+.pagination-link-white:focus{
+  background: #68A2CA;
+  transition: 1s;
+}
+
+
+.pagination-link-white:active{
+  color: white;
+  opacity: 0.3;
+}
 
 /* Начинается modular */
 
