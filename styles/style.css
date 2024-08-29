@@ -28,8 +28,9 @@ body{
   color: #000000;
   background-color: #ffffff;
   box-shadow:  0 0 15px 0 rgba(0, 0, 0, 0.2);
+  width: 1200px;
 
-  margin: 0;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -109,13 +110,80 @@ body{
 
 
 .navigation-item{
-  margin: 15px 2px;
+  position: relative;
+  margin: 15px 1px;
+}
+
+
+.navigation-item:last-child{
+  margin-right: 0;
+}
+
+
+.navigation-link{
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  position: relative;
+
+  padding: 15px 10px;
+}
+
+
+.navigation-link::after{
+  content: "";
+  position: absolute;
+  top: 104%;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 2px;
+  background-color: #756157;
+  opacity: 0;
+}
+
+
+.navigation-link:hover::after{
+  opacity: 1;
+}
+
+
+.navigation-link-current::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -4px;
+  height: 2px;
+  /* width: 93px; */
+  background-color: #756157
+}
+
+/*
+.navigation-link:hover{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border-bottom: 2px solid #756257;
+} */
+
+
+.navigation-link-brown{
+  color: #ffffff;
+  border-radius: 4px;
+  padding: 8px 50px;
+  background: #756157;
+  box-sizing: border-box;
+  text-transform: uppercase;
+
+  margin: 0;
 }
 
 
 .navigation-user{
-  max-width: 268px;
+  max-width: 303px;
   margin-left: auto;
+  margin-right: 70px;
 }
 
 
@@ -156,13 +224,6 @@ body{
   padding: 0 12px;
 }
 
-.navigation-link{
-  text-decoration: none;
-  color: #000000;
-
-  padding: 15px 8px;
-}
-
 
 .main-container{
   flex-grow: 1;
@@ -175,6 +236,8 @@ body{
   background-image: url("../images/main-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
+
+  position: relative;
 }
 
 
@@ -182,6 +245,18 @@ body{
   display: block;
   margin: 0 auto;
   height: 485px;
+}
+
+
+.hero-bottom{
+  background-image: url("../images/index-main-background-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  width: 1200px;
+  height: 57px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 
 
@@ -196,7 +271,7 @@ body{
   display: block;
   margin: 0 auto;
   margin-top: 69px;
-  padding: 0 95px;
+  padding: 0 220px;
 }
 
 
@@ -231,12 +306,12 @@ body{
 
 
 .advantages-item:nth-child(even){
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 
 .advantages-item:nth-child(odd){
-  background-color:  rgba(131, 179, 211, 0.12);
+  background-color:  rgba(131, 179, 211, 0.2);
 }
 
 
@@ -294,11 +369,37 @@ body{
 
 
 .advantages-reason{
+  position: relative;
+
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+}
+
+
+.advantages-reason-pale::after{
+  content: "";
+  left: 170px;
+  position: absolute;
+  top: 188px;
+  width: 60px;
+  height: 2px;
+  background: #000000;
+  opacity: 0.3;
+}
+
+
+.advantages-reason-white::after{
+  content: "";
+  left: 170px;
+  position: absolute;
+  top: 188px;
+  width: 60px;
+  height: 2px;
+  background: #FFFFFF;
+  opacity: 0.3;
 }
 
 
@@ -380,14 +481,33 @@ body{
 
 
 .comfort-reason{
+  display: block;
+
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
   text-align: center;
   color: #000000;
+  background-repeat: no-repeat;
+  background-position: center;
 
-  padding: 112px 109px 62px;
+  padding: 183px 109px 0;
   margin: 0;
+}
+
+
+.reason-house{
+  background-image: url("../images/index-reason-house.svg");
+}
+
+
+.reason-food{
+  background-image: url("../images/index-reason-food.svg");
+}
+
+
+.reason-gift{
+  background-image: url("../images/index-reason-gift.svg");
 }
 
 
@@ -398,6 +518,7 @@ body{
   color: #333333;
 
   padding: 0 85px;
+  padding-top: 40px;
   margin: 0;
 }
 
@@ -434,11 +555,19 @@ body{
 
 
 .interest-button{
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
+  font-weight: 700;
   line-height: 36px;
   text-transform: uppercase;
   text-align: inherit;
   color: #ffffff;
+
+  border-radius: 4px;
+  padding: 8px 15px;
+  width: 376px;
+  height: 52px;
+  background: #756157;
 }
 
 
@@ -515,6 +644,7 @@ body{
 
 
 .field-index{
+  font-size: 18px;
   border-radius: 4px 0 0 4px;
   width: 452px;
   height: 52px;
@@ -525,6 +655,10 @@ body{
 
 
 .news-button{
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
   border-radius: 0 4px 4px 0;
   width: 232px;
   height: 52px;
@@ -557,6 +691,7 @@ body{
 
 
 .info-item{
+  display: block;
   width: 47px;
   height: 40px;
 }
@@ -564,6 +699,11 @@ body{
 
 .info-link{
   display: block;
+}
+
+
+.info-icon:focus{
+  background-color: #68A2CA;
 }
 
 
@@ -647,6 +787,7 @@ body{
 
 
 .breadcrumbs-hotels{
+
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
@@ -696,6 +837,7 @@ body{
 
 
 .hotels-button{
+  font-family: "PT Sans", "Arial", sans-serif;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -711,6 +853,7 @@ body{
 
 
 .button-look-one{
+  font-family: "PT Sans", "Arial", sans-serif;
   border-radius: 4px;
   padding: 8px 35px;
   width: 191px;
@@ -728,6 +871,7 @@ body{
 
 
 .button-look-two{
+  font-family: "PT Sans", "Arial", sans-serif;
   border-radius: 4px;
   padding: 8px 35px;
   width: 191px;
@@ -774,6 +918,7 @@ body{
 
 .select-control{
   border: 2px solid #e5e5e5;
+  background: white;
   border-radius: 4px;
   padding: 12px 20px;
   width: 292px;
@@ -801,6 +946,8 @@ body{
 
 
 .button-cards{
+  position: relative;
+  font-family: "PT Sans", "Arial", sans-serif;
   border: 2px solid #000000;
   border-radius: 4px;
   width: 48px;
@@ -809,6 +956,8 @@ body{
 
 
 .button-single{
+  position: relative;
+  font-family: "PT Sans", "Arial", sans-serif;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   margin: 0 8px;
@@ -818,10 +967,19 @@ body{
 
 
 .button-list{
+  position: relative;
+  font-family: "PT Sans", "Arial", sans-serif;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   width: 48px;
   height: 48px;
+}
+
+
+.select-icon{
+  position: absolute;
+  top: 14px;
+  left: 14px;
 }
 
 
@@ -896,6 +1054,7 @@ body{
 
 
 .product-card-info-button{
+  font-family: "PT Sans", "Arial", sans-serif;
   border-radius: 4px;
   padding: 8px 10px;
   width: 140px;
@@ -916,6 +1075,7 @@ body{
 
 
 .product-card-like-button{
+  font-family: "PT Sans", "Arial", sans-serif;
   border-radius: 4px;
   padding: 8px 10px;
   max-width: 140px;
@@ -934,6 +1094,7 @@ body{
 
 
 .product-card-like-button-green{
+  font-family: "PT Sans", "Arial", sans-serif;
   border-radius: 4px;
   padding: 8px 10px;
   width: 140px;
