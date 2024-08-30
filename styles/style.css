@@ -826,11 +826,12 @@ body{
 .breadcrumbs{
   color: #ffffff;
   text-decoration: none;
-
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: flex-start;
   padding: 8px 0 40px;
+  max-width: 70%;
 }
 
 
