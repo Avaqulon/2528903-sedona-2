@@ -908,6 +908,141 @@ body{
 }
 
 
+/* БЛОК С RANGE */
+
+.hotels-price{
+  border: none;
+  margin-left: 140px;
+}
+
+
+.range-wrapper{
+/*   display: flex;
+  justify-content: flex-start; */
+  align-items: center;
+}
+
+
+.hotels-cost{
+  color: #ffffff;
+  font-weight: 700;
+}
+
+
+.range-start{
+  position: relative;
+}
+
+
+.range-input{
+  border: none;
+}
+
+
+.range-input[value="0"],
+.range-input[value="9000"]{
+  color: #000000;
+  font-weight: 700;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+
+
+.input-left{
+  border-radius: 4px 0 0 4px;
+  padding: 12px 0;
+  width: 83px;
+  background: #f2f2f2;
+  margin: 0;
+}
+
+
+.range-span-start{
+  position: absolute;
+  right: 20px;
+  top: 2px;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  opacity: 0.3;
+}
+
+
+.range-end{
+  position: relative;
+}
+
+
+.input-rigth{
+  border-radius: 0 4px 4px 0;
+  padding: 12px 0;
+  width: 83px;
+  background: #f2f2f2;
+  margin: 0;
+}
+
+
+.range-span-end{
+  position: absolute;
+  right: 16px;
+  top: 2px;
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  opacity: 0.3;
+}
+
+
+.range-scale{
+  margin-top: 90px;
+  position: relative;
+  height: 4px;
+  background-color: rgba(225, 225, 225, 0.3);
+}
+
+
+.range-bar{
+  position: absolute;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+.min-cost{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 25%;
+  background-color: #ffffff;
+  border: none;
+  bottom: -8px;
+  left: 0;
+}
+
+
+.max-cost{
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 25%;
+  background-color: #ffffff;
+  border: none;
+  bottom: -8px;
+  right: 0;
+}
+
+
+.cost-toggle:focus{
+  border: 3px solid #83b3d3;
+  border-radius: 5px;
+}
+
+.cost-toggle:active{
+  border: 2px solid #83b3d3;
+  border-radius: 5px;
+}
+
+
 .hotels-button{
   font-family: "PT Sans", "Arial", sans-serif;
   display: flex;

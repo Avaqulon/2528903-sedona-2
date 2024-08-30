@@ -120,7 +120,35 @@
             </ul>
           </fieldset>
 
-          <!-- Код с выбором цен-->
+          <fieldset class="hotels-price">
+            <legend class="hotels-cost">
+              Стоимость, ₽:
+            </legend>
+            <div class="range-wrapper">
+              <div class="range-cost">
+                <label class="range-start">
+                  <input class="range-input input-left" type="text" value="0" name="min-price">
+                  <span class="range-span-start">от</span>
+                </label>
+                <label class="range-end">
+                  <input class="range-input input-rigth" type="text" value="9000" name="max-price">
+                  <span class="range-span-end">до</span>
+                </label>
+              </div>
+
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0; width: 226px;">
+                  <button class="cost-toggle min-cost" type="button">
+
+                  </button>
+                  <button class="cost-toggle max-cost" type="button">
+
+                  </button>
+                </div>
+              </div>
+            </div>
+
+          </fieldset>
 
           <div class="hotels-button">
             <button class="button button-margin button-look-one" type="submit">Применить</button>
