@@ -194,7 +194,11 @@
           <div class="settings-age">
             <div class="settings-adult">
               <label class="settings-attribute" for="settings-date-adult">Взросые:</label>
-              <input class="settings-age-border" type="number" name="settings-date-adult" id="settings-date-adult" placeholder="2">
+              <div class="minmax">
+                <button class="settings-minus" type="button"></button>
+                <input class="settings-age-border" type="number" step="1" min="0" name="settings-date-adult" id="settings-date-adult" placeholder="2">
+                <button class="settings-plus" type="button"></button>
+              </div>
             </div>
             <div class="settings-child">
               <span class="form-label form-label-icon">
@@ -211,8 +215,9 @@
                   </span>
                 </span>
               </span>
-
-              <input class="settings-age-border" type="number" name="settings-date-adult" id="settings-date-child" placeholder="2">
+              <button class="settings-minus" type="button"></button>
+              <input class="settings-age-border" type="number" step="1" min="0" name="settings-date-adult" id="settings-date-child" placeholder="2">
+              <button class="settings-plus" type="button"></button>
             </div>
           </div>
           <button class="button settings-find-border" type="submit">Найти</button>
