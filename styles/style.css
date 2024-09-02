@@ -106,13 +106,13 @@ body{
 }
 
 
-.navigation a:hover{
+.navigation-list-one a:hover{
   color: rgba(0, 0, 0, 0.8);
   outline: none;
 }
 
 
-.navigation a:focus{
+.navigation-list-one a:focus{
   color: rgba(0, 0, 0, 0.6);
   outline: none;
 }
@@ -175,14 +175,17 @@ body{
 
 
 .navigation-link-brown:hover{
-  color: rgb(255, 255, 255);
+  outline: none;
+  background-color: #615048;
 }
 
 .navigation-link-brown:focus{
+  outline: none;
   background-color: #615048;
 }
 
 .navigation-link-brown:active{
+  outline: none;
   color: rgba(225, 225, 225, 0.3);
 }
 
@@ -191,6 +194,18 @@ body{
   max-width: 303px;
   margin-left: auto;
   margin-right: 70px;
+}
+
+
+.navigation-user a:not(:last-child):hover{
+  color: rgba(0, 0, 0, 0.8);
+  outline: none;
+}
+
+
+.navigation-user a:not(:last-child):focus{
+  color: rgba(0, 0, 0, 0.6);
+  outline: none;
 }
 
 
@@ -602,14 +617,17 @@ body{
 
 
 .interest-button[type="button"]:hover{
+  outline: none;
   background-color: #615048;
 }
 
 .interest-button[type="button"]:focus{
+  outline: none;
   background-color: #615048;
 }
 
 .interest-button[type="button"]:active{
+  outline: none;
   color: rgba(225, 225, 225, 0.3);
 }
 
@@ -705,16 +723,20 @@ body{
 
 
 .field-index:hover{
+  outline: none;
   background-color: #E6E6E6;
 }
 
 .field-index:focus{
+  outline: none;
   border: 2px solid #83B3D3;
 }
 
 .field-index[type="email"]{
+  outline: none;
   font-weight: 700;
   color: #000000;
+  padding-left: 20px;
 }
 
 .field-index::placeholder{
@@ -1943,7 +1965,7 @@ body{
 
 .settings-date-border{
   border-radius: 4px;
-  width: 440px;
+  width: 420px;
   height: 48px;
   background: #f2f2f2;
   border: none;
@@ -1958,19 +1980,10 @@ body{
 .settings-date-border:focus{
   border: none;
   outline: 2px solid #68a2ca;
-
+  padding-left: 20px;
 }
 
 .settings-date-border[type="text"]{
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 24px;
-  color: rgb(0, 0, 0);
-
-}
-
-
-.settings-date-border::placeholder{
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -1979,14 +1992,31 @@ body{
 }
 
 
+.settings-date-border::placeholder{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 24px;
+  color: rgb(0, 0, 0);
+}
+
+
 .settings-error{
   grid-column: 2/3;
+  font-weight: 400;
+  font-size: 16px;
   color: #FF5757;
+  padding-top: 4px;
+  padding-left: 20px;
 }
 
 
 .settings-accept{
   grid-column: 2/3;
+  font-weight: 400;
+  font-size: 16px;
+  color: #333333;
+  padding-top: 4px;
+  padding-left: 20px;
 }
 
 
