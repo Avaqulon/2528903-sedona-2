@@ -1872,9 +1872,9 @@ body{
 }
 
 
-.modal--close{
+/* .modal--close{
   display: none;
-}
+} */
 
 
 .modal-wrapper{
@@ -2020,7 +2020,52 @@ body{
 }
 
 
+.minus{
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: 16px;
+  left: 13px;
+  padding: 2px;
+}
+
+
+.settings-minus:hover path{
+  fill: black;
+  fill-opacity: 1;
+}
+
+.minus:focus{
+  outline: 2px solid #83B3D3;
+  border: none;
+  padding: 2px;
+}
+
+.settings-minus:focus-within .minus{
+  outline: 2px solid #83B3D3;
+  border-radius: 20%;
+  border: none;
+}
+
+.settings-minus:focus-within path{
+  fill: black;
+  fill-opacity: 1;
+}
+
+.settings-minus:active .minus{
+  fill: none;
+  outline: none;
+  border: none;
+}
+
+.settings-minus:active path{
+  fill-opacity: 0.3;
+}
+
+
 .settings-minus{
+  outline: none;
+
   position: relative;
   border-radius: 4px 0 0 4px;
   height: 48px;
@@ -2029,19 +2074,6 @@ body{
   border: none;
   padding: 0;
   margin-left: 4px;
-}
-
-
-.settings-minus::after{
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 2px;
-  background: #756157;
-  opacity: 0.3;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 
@@ -2061,6 +2093,7 @@ body{
 
 
 .settings-plus{
+  outline: none;
   position: relative;
   border-radius: 0 4px 4px 0;
   height: 48px;
@@ -2070,30 +2103,46 @@ body{
   padding: 0;
 }
 
-
-.settings-plus::before{
-  content: "";
+.plus{
   position: absolute;
-  width: 2px;
+  width: 14px;
   height: 14px;
-  background: #756157;
-  opacity: 0.3;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 14px;
+  left: 13px;
+  padding: 2px;
 }
 
 
-.settings-plus::after{
-  content: "";
-  position: absolute;
-  width: 14px;
-  height: 2px;
-  background: #756157;
-  opacity: 0.3;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.settings-plus:hover path{
+  fill: black;
+  fill-opacity: 1;
+}
+
+.plus:focus{
+  outline: 2px solid #83B3D3;
+  border: none;
+  padding: 2px;
+}
+
+.settings-plus:focus-within .plus{
+  outline: 2px solid #83B3D3;
+  border-radius: 20%;
+  border: none;
+}
+
+.settings-plus:focus-within path{
+  fill: black;
+  fill-opacity: 1;
+}
+
+.settings-plus:active .plus{
+  fill: none;
+  outline: none;
+  border: none;
+}
+
+.settings-plus:active path{
+  fill-opacity: 0.3;
 }
 
 
