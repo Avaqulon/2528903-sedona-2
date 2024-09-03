@@ -1009,7 +1009,7 @@ body{
   line-height: 23px;
   color: #ffffff;
 
-  margin-top: 32px;
+  margin-top: 22px;
 }
 
 
@@ -1026,7 +1026,7 @@ body{
 
 .control{
   display: block;
-  padding-left: 45px;
+  padding-left: 35px;
   position: relative;
   outline: none;
 }
@@ -1103,7 +1103,7 @@ body{
   padding: 0;
   margin: 0;
   border: none;
-  margin-left: 140px;
+  margin-left: 149px;
 }
 
 
@@ -1117,7 +1117,7 @@ body{
 
 
 .range-cost{
-  padding-top: 41px;
+  padding-top: 30px;
 }
 
 
@@ -1146,14 +1146,14 @@ body{
   color: #000000;
   font-weight: 700;
   padding-left: 20px;
-  padding-right: 40px;
+  padding-right: 48px;
 }
 
 
 .input-left{
   border-radius: 4px 0 0 4px;
-  padding: 12px 0;
-  width: 83px;
+  padding: 17px 0;
+  width: 73px;
   background: #f2f2f2;
   margin: 0;
 }
@@ -1161,8 +1161,8 @@ body{
 
 .range-span-start{
   position: absolute;
-  right: 20px;
-  top: 2px;
+  right: 24px;
+  top: 3px;
   margin: 0;
   padding: 0;
   color: #000000;
@@ -1177,8 +1177,8 @@ body{
 
 .input-rigth{
   border-radius: 0 4px 4px 0;
-  padding: 12px 0;
-  width: 83px;
+  padding: 17px 0;
+  width: 73px;
   background: #f2f2f2;
   margin: 0;
 }
@@ -1186,8 +1186,8 @@ body{
 
 .range-span-end{
   position: absolute;
-  right: 16px;
-  top: 2px;
+  right: 20px;
+  top: 4px;
   margin: 0;
   padding: 0;
   color: #000000;
@@ -1196,7 +1196,7 @@ body{
 
 
 .range-scale{
-  margin-top: 48px;
+  margin-top: 43px;
   position: relative;
   height: 4px;
   background-color: rgba(225, 225, 225, 0.3);
@@ -1254,7 +1254,7 @@ body{
   flex-wrap: nowrap;
   margin-left: auto;
   justify-content: center;
-  padding-top: 63px;
+  padding-top: 56px;
 }
 
 
