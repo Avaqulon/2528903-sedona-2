@@ -78,7 +78,7 @@ body{
 
 
 .logo{
-  margin: -6px 28px 0 70px;
+  margin: -10px 28px 0 70px;
 }
 
 
@@ -92,10 +92,10 @@ body{
 
 
 .logotype{
-  width: 138px;
-  height: 64px;
+  width: 140px;
+  height: 70px;
   position: relative;
-  top: 6px;
+  top: 10px;
 }
 
 
@@ -132,7 +132,7 @@ body{
 
 .navigation-item{
   position: relative;
-  margin: 15px 1px;
+  margin: 15px 5px;
 }
 
 
@@ -155,7 +155,7 @@ body{
   content: "";
   position: absolute;
   background-color: #756257;
-  bottom: -7%;
+  bottom: -9%;
   left: 10%;
   right: 9%;
   height: 2px;
@@ -163,9 +163,12 @@ body{
 
 
 .navigation-link-brown{
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
   color: #ffffff;
   border-radius: 4px;
-  padding: 8px 50px;
+  padding: 8px 35px;
   background: #756157;
   box-sizing: border-box;
   text-transform: uppercase;
@@ -193,7 +196,7 @@ body{
 .navigation-user{
   max-width: 303px;
   margin-left: auto;
-  margin-right: 70px;
+  margin-right: 42px;
 }
 
 
@@ -245,6 +248,8 @@ body{
   display: block;
   padding: 0 12px;
   position: relative;
+  margin-right: 12px;
+  margin-left: -1px;
 }
 
 
@@ -305,13 +310,14 @@ body{
   background-repeat: no-repeat, no-repeat;
   background-size: 1200px auto, cover;
   background-position: center bottom, center;
+  display: block;
+  margin: 0 auto;
+  height: 485px;
 }
 
 
 .hero-welcome{
-  display: block;
-  margin: 0 auto;
-  height: 485px;
+  margin: 51px 371px 82px;
 }
 
 
@@ -407,7 +413,7 @@ body{
   text-align: center;
   color: #ffffff;
 
-  padding: 112px 114px 62px;
+  padding: 101px 114px 62px;
   margin: 0;
 }
 
@@ -438,7 +444,7 @@ body{
   content: "";
   left: 50%;
   position: absolute;
-  bottom: 25px;
+  bottom: 29px;
   width: 60px;
   height: 2px;
   background: currentColor;
@@ -481,7 +487,7 @@ body{
 
   display: block;
   margin: 0 0;
-  padding: 64px 310px 0;
+  padding: 64px 350px 0;
 }
 
 
@@ -535,22 +541,25 @@ body{
   background-repeat: no-repeat;
   background-position: center;
 
-  padding: 183px 109px 0;
+  padding: 165px 109px 0;
   margin: 0;
 }
 
 
 .reason-house{
+  margin-top: 20px;
   background-image: url("../images/index-reason-house.svg");
 }
 
 
 .reason-food{
+  margin-top: 20px;
   background-image: url("../images/index-reason-food.svg");
 }
 
 
 .reason-gift{
+  margin-top: 20px;
   background-image: url("../images/index-reason-gift.svg");
 }
 
@@ -562,7 +571,7 @@ body{
   color: #333333;
 
   padding: 0 85px;
-  padding-top: 40px;
+  padding-top: 28px;
   margin: 0;
 }
 
@@ -652,6 +661,7 @@ body{
   background-size: 100% auto;
 
   width: 1200px;
+  height: 415px;
 }
 
 
@@ -662,7 +672,7 @@ body{
   text-transform: uppercase;
   text-align: center;
 
-  padding-top: 88px;
+  padding-top: 97px;
   margin: 0 0;
 }
 
@@ -675,6 +685,7 @@ body{
 
 .news-subtitle{
   color:#ffffff;
+  font-weight: 400;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -788,7 +799,7 @@ body{
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 45px 0;
 }
 
 
@@ -797,7 +808,7 @@ body{
   flex-flow: row wrap;
 
   width: 150px;
-  padding-left: 58px;
+  padding-left: 70px;
 }
 
 
@@ -1364,7 +1375,7 @@ body{
 .select-control{
   font-family: "PT Sans", "Arial", sans-serif;
   border: 2px solid #e5e5e5;
-  background: white;
+  background: #ffffff;
   border-radius: 4px;
   padding: 12px 20px;
   width: 292px;
@@ -1851,7 +1862,7 @@ body{
 
 
 .pagination-link-white:active{
-  color: white;
+  color: #ffffff;
   opacity: 0.3;
   outline: none;
 }
@@ -1872,9 +1883,9 @@ body{
 }
 
 
-/* .modal--close{
+.modal--close{
   display: none;
-} */
+}
 
 
 .modal-wrapper{
@@ -1907,6 +1918,17 @@ body{
   background-color: #f2f2f2;
   top: 64px;
   right: 52px;
+  border: none;
+}
+
+
+.modal-close-button:hover{
+  outline: 2px solid #68a2ca;
+  border: none;
+}
+
+.modal-close-button:focus{
+  outline: 2px solid #68a2ca;
   border: none;
 }
 
@@ -2031,7 +2053,7 @@ body{
 
 
 .settings-minus:hover path{
-  fill: black;
+  fill: #000000;
   fill-opacity: 1;
 }
 
@@ -2048,7 +2070,7 @@ body{
 }
 
 .settings-minus:focus-within path{
-  fill: black;
+  fill: #000000;
   fill-opacity: 1;
 }
 
@@ -2114,7 +2136,7 @@ body{
 
 
 .settings-plus:hover path{
-  fill: black;
+  fill: #000000;
   fill-opacity: 1;
 }
 
@@ -2131,7 +2153,7 @@ body{
 }
 
 .settings-plus:focus-within path{
-  fill: black;
+  fill: #000000;
   fill-opacity: 1;
 }
 
@@ -2241,6 +2263,12 @@ body{
   height: 26px;
   top: -1px;
   right: 46px;
+}
+
+
+.tooltip-toggle:focus{
+  border: none;
+  outline: none;
 }
 
 
