@@ -236,6 +236,19 @@ body{
 }
 
 
+.navigation-item.navigation-link-search:hover{
+  opacity: 0.8;
+}
+
+.navigation-item.navigation-link-search:focus{
+  opacity: 0.6;
+}
+
+.navigation-item.navigation-link-search:focus-within{
+  opacity: 0.6;
+}
+
+
 .navigation-link-heart{
   color: #000000;
   background-color: #ffffff;
@@ -268,13 +281,18 @@ body{
 }
 
 
-.navigation-link-heart:hover{
+.navigation-item.navigation-link-heart:hover{
   opacity: 0.8;
 }
 
-.navigation-link-heart:focus{
-  opacity: 0.8;
+.navigation-item.navigation-link-heart:focus{
+  opacity: 0.6;
 }
+
+.navigation-item.navigation-link-heart:focus-within{
+  opacity: 0.6;
+}
+
 
 
 .item-twelve{
@@ -426,6 +444,7 @@ body{
 
   margin: 0;
   padding: 0 86px;
+  padding-bottom: 15px;
 }
 
 
@@ -461,6 +480,7 @@ body{
 
   margin: 0;
   padding: 0 85px;
+  padding-bottom: 15px;
 }
 
 
@@ -573,6 +593,7 @@ body{
   padding: 0 85px;
   padding-top: 28px;
   margin: 0;
+  padding-bottom: 15px;
 }
 
 
@@ -734,17 +755,14 @@ body{
 
 
 .field-index:hover{
-  outline: none;
   background-color: #E6E6E6;
 }
 
 .field-index:focus{
-  outline: none;
-  border: 2px solid #83B3D3;
+  outline: 2px solid #83B3D3;
 }
 
 .field-index[type="email"]{
-  outline: none;
   font-weight: 700;
   color: #000000;
   padding-left: 20px;
@@ -991,7 +1009,7 @@ body{
 
 
 .hotels-filter-group-two{
-  margin-left: 70px;
+  margin-left: 67px;
 }
 
 
@@ -1009,7 +1027,7 @@ body{
   line-height: 23px;
   color: #ffffff;
 
-  margin-top: 22px;
+  margin-top: 23px;
 }
 
 
@@ -1026,7 +1044,7 @@ body{
 
 .control{
   display: block;
-  padding-left: 35px;
+  padding-left: 37px;
   position: relative;
   outline: none;
 }
@@ -1038,8 +1056,8 @@ body{
   height: 20px;
   border-radius: 20%;
   background-color: #ffffff;
-  top: 2px;
-  left: 1px;
+  top: 1px;
+  left: 0;
 }
 
 
@@ -1103,7 +1121,7 @@ body{
   padding: 0;
   margin: 0;
   border: none;
-  margin-left: 149px;
+  margin-left: 152px;
 }
 
 
@@ -1113,6 +1131,7 @@ body{
   line-height: 24px;
   text-transform: capitalize;
   color: #ffffff;
+  padding: 0;
 }
 
 
@@ -1149,8 +1168,8 @@ body{
   font-weight: 700;
   font-size: 18px;
   padding-left: 20px;
-  padding-right: 48px;
-  margin-left: -2px;
+  padding-right: 49px;
+  margin-left: -3px;
 }
 
 
@@ -1165,8 +1184,8 @@ border-radius: 4px 0 0 4px;
 
 .range-span-start{
   position: absolute;
-  right: 24px;
-  top: 3px;
+  right: 25px;
+  top: 1px;
   margin: 0;
   padding: 0;
   color: #000000;
@@ -1190,8 +1209,8 @@ border-radius: 4px 0 0 4px;
 
 .range-span-end{
   position: absolute;
-  right: 20px;
-  top: 4px;
+  right: 19px;
+  top: 1px;
   margin: 0;
   padding: 0;
   color: #000000;
@@ -1239,14 +1258,14 @@ border-radius: 4px 0 0 4px;
 
 
 .cost-toggle:focus{
-  outline: none;
-  border: 3px solid #83b3d3;
+  border: none;
+  outline: 3px solid #83b3d3;
   border-radius: 5px;
 }
 
 .cost-toggle:active{
-  outline: none;
-  border: 2px solid #83b3d3;
+  border: none;
+  outline: 3px solid #83b3d3;
   border-radius: 5px;
 }
 
@@ -1324,14 +1343,13 @@ border-radius: 4px 0 0 4px;
 
 
 .button-look-two:hover{
-  outline: none;
   color: rgba(225, 225, 225, 0.6);
 }
 
 .button-look-two:focus{
-  outline: none;
+  border: none;
   background-color: transparent;
-  border: 3px solid #83b3d3;
+  outline: 3px solid #83b3d3;
   border-radius: 4px;
 }
 
@@ -1891,10 +1909,10 @@ border-radius: 4px 0 0 4px;
 }
 
 
-.modal--close{
+/* .modal--close{
   display: none;
 }
-
+ */
 
 .modal-wrapper{
   position: relative;
@@ -1967,11 +1985,11 @@ border-radius: 4px 0 0 4px;
 
   padding-bottom: 23px;
 
-  position: relative;
+/*   position: relative; */
 }
 
 
-.settings-holder::after{
+/* .settings-holder::after{
   content: "";
   position: absolute;
   background-image: url("../images/modal-calendar.svg");
@@ -1979,9 +1997,10 @@ border-radius: 4px 0 0 4px;
   color: #000000;
   width: 20px;
   height: 20px;
-  top: 14px;
-  right: 30px;
-}
+  bottom: 51%;
+  right: 4%;
+  transform: translateY(-50%);
+} */
 
 
 .settings-attribute{
@@ -1993,7 +2012,13 @@ border-radius: 4px 0 0 4px;
 }
 
 
+.settings-holder input::placeholder{
+  color: rgb(0, 0, 0, 0.6);
+}
+
+
 .settings-date-border{
+
   border-radius: 4px;
   width: 420px;
   height: 48px;
@@ -2003,8 +2028,8 @@ border-radius: 4px 0 0 4px;
 }
 
 .settings-date-border:hover{
+  color: rgba(0, 0, 0, 0.6);
   background-color: rgba(225, 225, 225);
-  opacity: 0.6;
 }
 
 .settings-date-border:focus{
@@ -2014,11 +2039,14 @@ border-radius: 4px 0 0 4px;
 }
 
 .settings-date-border[type="text"]{
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   padding-left: 20px;
-  color: rgb(0, 0, 0);
+  background-image: url("../images/modal-calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 405px center;
 }
 
 
@@ -2027,6 +2055,7 @@ border-radius: 4px 0 0 4px;
   font-size: 18px;
   line-height: 24px;
   color: rgb(0, 0, 0);
+  padding-right: 15px;
 }
 
 
@@ -2109,7 +2138,7 @@ border-radius: 4px 0 0 4px;
 
 .settings-age-border{
   height: 48px;
-  width: 31px;
+  width: 11px;
   background: #f2f2f2;
   border: none;
   padding: 0;
@@ -2121,6 +2150,17 @@ border-radius: 4px 0 0 4px;
   margin: 0;
 }
 
+
+.settings-age-border:hover{
+  border: none;
+  outline: none;
+  opacity: 0.8;
+}
+
+.settings-age-border:focus{
+  outline: none;
+  border: none;
+}
 
 .settings-plus{
   outline: none;
@@ -2176,7 +2216,8 @@ border-radius: 4px 0 0 4px;
 }
 
 
-.settings-age-border::placeholder{
+.settings-age-border[value="2"]{
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
@@ -2202,10 +2243,14 @@ border-radius: 4px 0 0 4px;
 
 
 .settings-find-border:hover{
+  outline: none;
+  border: none;
   background-color: #68A2CA;
 }
 
 .settings-find-border:focus{
+  outline: none;
+  border: none;
   background-color: #68A2CA;
 }
 
@@ -2273,10 +2318,17 @@ border-radius: 4px 0 0 4px;
   right: 46px;
 }
 
+.tooltip-toggle:hover{
+  border: none;
+  outline: 1px solid #000000;
+  border-radius: 50%;
+}
+
 
 .tooltip-toggle:focus{
   border: none;
-  outline: none;
+  outline: 1px solid #000000;
+  border-radius: 50%;
 }
 
 
