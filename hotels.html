@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header class="page-header container">
+    <header class="page-header container" data-test="header">
       <nav class="navigation">
         <a class="logo" href="index.html">
           <img class="logotype" src="images/logo.svg" alt="Логотип" width="140" height="70">
@@ -50,8 +50,8 @@
       </nav>
     </header>
 
-    <main class="main-inner container main-container">
-      <section class="hotels-settings">
+    <main class="main-inner container main-container" data-test="main">
+      <section class="hotels-settings" data-test="hotels-settings">
         <h1 class="inner-title">Гостиницы Седоны</h1>
         <ol class="breadcrumbs list-reset">
           <li class="breadcrumbs-item">
@@ -164,7 +164,7 @@
         </form>
       </section>
 
-      <section class="select">
+      <section class="select" data-test="select">
         <header class="select-containter">
           <span class="select-find">Найдено гостиниц: 38</span>
           <select class="select-control" aria-label="Сортировка">
@@ -340,7 +340,7 @@
         </ul>
       </section>
 
-      <section class="news">
+      <section class="news" data-test="news">
         <h2 class="news-title news-title-black">Подпишитесь на рассылку</h2>
         <p class="news-subtitle news-subtitle-black">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="news-search" action="#" method="post">
@@ -351,7 +351,7 @@
       </section>
     </main>
 
-    <footer class="info container">
+    <footer class="info container" data-test="footer">
       <ul class="info-list list-reset">
         <li class="info-item">
           <a class="info-link info-link-vk" href="https://vk.com/htmlacademy">
